@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+class Countdown {
+    static void count(int n) {
+        if (n < 1)
+            return;
+
+        System.out.println(n);
+        count(n - 1);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter N: ");
+        int n = sc.nextInt();
+
+        count(n);
+    }
+}
