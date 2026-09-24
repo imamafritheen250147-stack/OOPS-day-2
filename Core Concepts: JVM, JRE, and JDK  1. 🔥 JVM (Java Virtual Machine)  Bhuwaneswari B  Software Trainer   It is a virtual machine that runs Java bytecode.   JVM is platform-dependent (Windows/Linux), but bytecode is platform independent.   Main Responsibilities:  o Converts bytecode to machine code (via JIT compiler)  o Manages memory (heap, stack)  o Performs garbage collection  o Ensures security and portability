@@ -1,0 +1,12 @@
+Core Concepts: JVM, JRE, and JDK 
+1. 🔥 JVM (Java Virtual Machine) 
+Bhuwaneswari B 
+Software Trainer 
+ It is a virtual machine that runs Java bytecode. 
+ JVM is platform-dependent (Windows/Linux), but bytecode is platform
+independent. 
+ Main Responsibilities: 
+o Converts bytecode to machine code (via JIT compiler) 
+o Manages memory (heap, stack) 
+o Performs garbage collection 
+o Ensures security and portability
