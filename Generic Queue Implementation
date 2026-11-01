@@ -1,0 +1,40 @@
+
+import java.util.*;
+
+class QueueBox<T> {
+    private Queue<T> q = new LinkedList<>();
+
+    void enqueue(T item) {
+        q.add(item);
+    }
+
+    T dequeue() {
+        if (q.isEmpty()) {
+            System.out.println("Queue is empty");
+            return null;
+        }
+        return q.poll();
+    }
+
+    void display() {
+        System.out.println(q);
+    }
+}
+
+public class Generic27 {
+    public static void main(String[] args) {
+        QueueBox<Integer> q = new QueueBox<>();
+
+        q.enqueue(10);
+        q.enqueue(20);
+        q.enqueue(30);
+
+        System.out.print("Queue: ");
+        q.display();
+
+        System.out.println("Removed: " + q.dequeue());
+
+        System.out.print("After removal: ");
+        q.display();
+    }
+}
